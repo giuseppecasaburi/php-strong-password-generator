@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+isset($_SESSION["password-length"]) ? true : header("Location: ./index.php"); 
+
 $_SESSION["password-length"] = $_POST["password-length"];
 
 // FUNZIONE CHE ACCETTA UN VALORE INTERO IN INGRESSO
