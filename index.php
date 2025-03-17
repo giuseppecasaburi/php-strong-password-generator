@@ -1,7 +1,3 @@
-<?php 
-require "./functions.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +11,7 @@ require "./functions.php";
 
     <div class="container">
         <div class="container-form">
-            <form action="" method="GET">
+            <form action="./result.php" method="POST">
                 <div>
                     <label for="password-length">Lunghezza password</label>
                     <input type="number" name="password-length" id="" required min=0 max=18>

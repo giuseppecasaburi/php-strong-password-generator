@@ -1,9 +1,10 @@
 <?php
-// PRENDO IL PARAMENTRO DELLA LUNGHEZZA DALL'URL E LO TRANSFORMO IN UN VALORE INT
-$user_length = (int)$_GET["password-length"];
+session_start();
+
+$_SESSION["password-length"] = $_POST["password-length"];
 
 // FUNZIONE CHE ACCETTA UN VALORE INTERO IN INGRESSO
-function passwordGeneretor(int $user_length)
+function passwordGenerator(int $user_length)
 {
     $string_array = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "Z", "X", "Y", "K", "J", "a", "b", "c", "d", "e", "f", "g", "h", "i", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "z", "y", "x", "k", "j", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "!", "@", ".", "_"];
     $password = "";
@@ -16,6 +17,4 @@ function passwordGeneretor(int $user_length)
     };
 
     echo $password;
-}
-
-passwordGeneretor($user_length);
+};
