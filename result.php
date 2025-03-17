@@ -1,5 +1,6 @@
 <?php 
 require "./functions.php";
+$user_password = passwordGenerator($_SESSION["password-length"]);
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@ require "./functions.php";
     <h1>Password Generata con successo</h1>
     <p><b>
         <?php 
-        passwordGenerator($_SESSION["password-length"]);
+        echo "La password pensata per te è: $user_password"
         ?>
     </b></p>
 </body>

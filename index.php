@@ -17,7 +17,7 @@
                     <input type="number" name="password-length" id="" required min=0 max=18>
                 </div>
                 <div>
-                    <label for="letters">Lettere</label>
+                    <label for="letters">Lettere maiuscole</label>
                     <input type="checkbox" name="letters" id="">
                 </div>
                 <div>
